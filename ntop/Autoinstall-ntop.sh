@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # INSTALLATION AUTOMATISER DE NTOP - DEBIAN
 # Script dev. par Mickael Stanislas pour Infowiki
 # http://mickael-stanislas.com/
@@ -16,7 +17,6 @@ apt-get install -y ntop
 ADDRIP=$(ifconfig eth0 | grep "inet addr" | cut -d " " -f 12 | cut -d : -f 2)
 
 clear
-echo
+echo ""
 echo "Installation terminé !"-n
 echo "Connectez vous" "http://""$ADDRIP"":3000" -n
-

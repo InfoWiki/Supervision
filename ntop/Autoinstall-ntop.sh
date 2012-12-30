@@ -5,7 +5,7 @@
 # https://github.com/InfoWiki
 # http://infowiki.fr
 #
-# Version = 1.05
+# Version = 1.06
 # Synthaxe: bash ./Autoinstall-ntop.sh
 # Synthaxe: sudo bash ./Autoinstall-ntop.sh
 
@@ -15,7 +15,7 @@ echo "# SOURCE POUR NTOP" > /etc/apt/sources.list
 echo "deb http://backports.debian.org/debian-backports squeeze-backports main" > /etc/apt/sources.list
 # On fait les mises à jours
 apt-get update
-apt-get upgrade -y -f
+apt-get upgrade -y
 # On install Ntop
 apt-get install -y ntop
 # ON RECUPERE L'ADRESSE IP DANS UNE VARIABLE
